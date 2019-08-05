@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom'
 import TodoList from './components/TodoComponents/TodoList'
 import TodoForm from './components/TodoComponents/TodoForm'
 
+import "./App.css";
+
 const toDoList = [
     {
         task: 'Sameple Task',
@@ -67,16 +69,19 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-                <div>
-                    <h2>Welcome to your Todo App!</h2>
+            <div className="app">
+                <div className="text">
+                    <h2>Track your Todo's!</h2>
+                    <p>Click to Finish a Task</p>
                 </div>
-                <TodoList
-                    clearFinished={this.clearFinished}
-                    toDoList={this.state.toDoList}
-                    toggleItem={this.toggleItem}
-                />
-                <TodoForm addItem={this.addItem} />
+                <div className='test'>
+                    <TodoList
+                        clearFinished={this.clearFinished}
+                        toDoList={this.state.toDoList}
+                        toggleItem={this.toggleItem}
+                        addItem={this.addItem}
+                    />
+                </div>
             </div>
         );
     }

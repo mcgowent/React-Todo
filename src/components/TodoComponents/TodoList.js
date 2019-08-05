@@ -5,6 +5,8 @@
 import React from 'react';
 
 import Todo from './Todo';
+import TodoForm from './TodoForm';
+
 
 const TodoList = props => {
     return (
@@ -12,9 +14,13 @@ const TodoList = props => {
             {props.toDoList.map(item => (
                 <Todo key={item.id} item={item} toggleItem={props.toggleItem} />
             ))}
-            <button className="clear-btn" onClick={props.clearFinished}>
-                Clear Finished
+            <div className="sameLine">
+                <TodoForm addItem={props.addItem} />
+
+                <button className="clear-btn" onClick={props.clearFinished}>
+                    Clear Finished
       </button>
+            </div>
         </div>
     );
 };
