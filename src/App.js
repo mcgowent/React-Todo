@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import TodoList from './components/TodoComponents/TodoList'
-import TodoForm from './components/TodoComponents/TodoForm'
+// import TodoForm from './components/TodoComponents/TodoForm'
 
 import "./App.css";
 
@@ -22,8 +22,8 @@ const toDoList = [
         id: 1528817084399,
         completed: true
     },
-
 ]
+
 class App extends React.Component {
     constructor() {
         super()
@@ -57,7 +57,7 @@ class App extends React.Component {
             completed: false
         }
         this.setState({
-            toDoList: [...this.state.toDoList, newItem]
+            toDoList: [...this.state.toDoList, newItem], todo: ""
         })
     }
 

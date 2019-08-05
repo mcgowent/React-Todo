@@ -1,14 +1,17 @@
+*{
+}
 
 .app {
     background:rgb(147, 212, 156);
     color:white;
+    border: 1px solid #868a8f;
 
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    margin: 0 auto;
+    margin: 10% auto;
     padding:25px;
     width:400px;
     height: auto;
@@ -80,6 +83,6 @@ form > input {
   width: 240px;
   outline: 0;
   color: white;
-  border-bottom: 1px solid #e64944;
+  border-bottom: 1px solid #ffffff;
   margin-right: 8px;
 }

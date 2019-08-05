@@ -3,4 +3,4 @@ import React from 'react';
 import { render } from 'react-dom';
 import App from './App';
 
-render(<App />, document.getElementById('root'));
+render(<App className="center" />, document.getElementById('root'));
